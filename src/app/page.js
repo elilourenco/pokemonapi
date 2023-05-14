@@ -3,11 +3,9 @@
 import { useEffect, useState } from 'react';
 
 import axios from 'axios';
-import pokemon from '../../public/poke.png'
-
 import Image from 'next/image';
 
-  function App() {
+function App() {
   
   const[pokemons, setPokemons] = useState([]);
 
@@ -52,14 +50,18 @@ import Image from 'next/image';
   <div className=' bg-zinc-900 h-screen'>
     <header className='bg-zinc-900 flex justify-between  py-8 px-10 '>
       <div className='flex gap-3'>
-      <p className=' text-2xl text-white'> <strong>POKEMON</strong></p>
-        
+        <p className=' text-2xl text-white'> 
+          <strong>POKEMON</strong>
+        </p>
         
       </div>
       <div className='flex'>
         <input onChange={(e)=>pokemonFilter(e.target.value)} 
-        className='bg-zinc-600 rounded-full items-center py-3 px-1 ' 
-        placeholder='searching' type="search" name="" id="" />
+          className='bg-zinc-600 rounded-full items-center py-3 px-1 ' 
+          placeholder='searching'
+          type="search"
+
+        />
       </div>
     </header>
 
@@ -78,9 +80,9 @@ import Image from 'next/image';
 
             />
               
-              <p className='items-center text-xl'>{pokemon.data.name}</p> 
-              <p>Experience:{pokemon.data.base_experience}</p>
-              <p>{}</p>
+            <p className='items-center text-xl'>{pokemon.data.name}</p> 
+            <p>Experience:{pokemon.data.base_experience}</p>
+          
           </div>
         ))}
           
@@ -94,10 +96,8 @@ import Image from 'next/image';
 
     </footer>
 
-  </div>
-
-     
+  </div>    
     
-  )
+)
 }
 export default App;
