@@ -18,6 +18,8 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 ## Learn More
 
+This project aims to consume pokemon's public api, in addition to consuming the api and monstar on the screen, I also implemented the functionality of searching pokemos by the initial of its name
+
 
 
 ## Deploy on Vercel
